@@ -26,6 +26,28 @@ Si ves un bloqueo de aprobación pendiente, resetea con:
 
 ## Exec policy (importante)
 
+## OpenClaw Runtime
+
+- Current CLI/gateway version: `2026.5.27` (`27ae826`)
+- Updated on: `2026-05-29`
+- Previous local CLI version observed before update: `2026.3.13` (`61d171a`)
+- User-facing update notice referenced: `2026.4.4` (`562187d`) -> `2026.5.27`
+- Install command used:
+
+```bash
+pnpm add -g openclaw@2026.5.27
+```
+
+- Validation commands:
+
+```bash
+openclaw --version
+openclaw config validate
+openclaw gateway status
+```
+
+- Upgrade note: `2026.5.27` requires `channels.telegram.streaming` to be an object in `~/.openclaw/openclaw.json`. A local backup was created before migration using the prefix `openclaw.json.bak-before-2026-5-27-update-`.
+
 ## Home Assistant
 
 - URL: `http://127.0.0.1:8123`
